@@ -20,8 +20,8 @@
       }
       .container {
         background: white;
-        padding: 2rem;
-        border-radius: 10px;
+        padding: 2.5rem;
+        border-radius: 12px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         max-width: 600px;
         width: 90%;
@@ -29,82 +29,81 @@
       h1 {
         color: #2d3748;
         margin-bottom: 1rem;
+        font-size: 2rem;
       }
       .domain-name {
-        font-size: 2rem;
-        color: #4a5568;
-        margin: 1rem 0;
+        font-size: 2.25rem;
+        color: #2d3748;
+        margin: 1.5rem 0;
         word-break: break-all;
+        font-weight: 500;
       }
       .description {
-        color: #718096;
+        color: #4a5568;
         margin-bottom: 2rem;
         line-height: 1.6;
+        font-size: 1.1rem;
       }
       .cta-button {
         display: inline-block;
         background: #4299e1;
         color: white;
-        padding: 1rem 2rem;
-        border-radius: 5px;
+        padding: 0.875rem 2rem;
+        border-radius: 6px;
         text-decoration: none;
-        font-weight: bold;
-        transition: background 0.3s ease;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        font-size: 1.1rem;
       }
       .cta-button:hover {
         background: #3182ce;
+        transform: translateY(-1px);
       }
       .contact-info {
         margin-top: 2rem;
-        color: #718096;
+        color: #4a5568;
+        font-size: 1.1rem;
+      }
+      .divider {
+        margin: 2rem 0;
+        border: none;
+        border-top: 1px solid #e2e8f0;
+        width: 100%;
+      }
+      .email-container {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: #f7fafc;
+        border-radius: 6px;
+        display: inline-block;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Domain For Sale</h1>
-      <div class="domain-name" id="domainName">example.com</div>
+      <div class="domain-name">volkro.com</div>
       <p class="description">
-        This premium domain name is available for purchase. Contact us to
-        discuss pricing and terms.
+        This premium domain name is available for purchase.
       </p>
-      <div
-        class="buttons-container"
-        style="
-          display: flex;
-          gap: 1rem;
-          justify-content: center;
-          flex-wrap: wrap;
-        "
+      <a
+        href="https://checkoutLink.godaddy.com/1d878fa9-044f-46b8-a557-274a7fbcb3b0"
+        class="cta-button"
+        >Buy Now</a
       >
-        <a
-          href="https://checkoutLink.godaddy.com/1d878fa9-044f-46b8-a557-274a7fbcb3b0"
-          class="cta-button"
-          >Buy Now</a
-        >
-        <a
-          href="#"
-          onclick="return false;"
-          class="cta-button"
-          style="background: #48bb78"
-          >Contact Me</a
-        >
-      </div>
+
+      <hr class="divider" />
+
       <div class="contact-info">
-        <p>Purchase securely through GoDaddy or contact me at:</p>
-        <div style="margin-top: 1rem">
+        <p>Purchase securely through GoDaddy or contact me directly at:</p>
+        <div class="email-container">
           <img
             src="email.svg"
             alt="Contact Email"
-            style="max-width: 200px; height: auto"
+            style="max-width: 250px; height: auto"
           />
         </div>
       </div>
     </div>
-    <script>
-      // Automatically display the current domain
-      document.getElementById("domainName").textContent =
-        window.location.hostname;
-    </script>
   </body>
 </html>
