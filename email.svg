@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 30">
+  <style>
+    .email-part {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      fill: #4a5568;
+    }
+    .spacing {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      fill: #4a5568;
+      letter-spacing: 2px;
+    }
+  </style>
+  <!-- Breaking up the email into separate text elements -->
+  <text x="10" y="20" class="email-part">username</text>
+  <text x="65" y="20" class="spacing">(at)</text>
+  <text x="95" y="20" class="email-part">example</text>
+  <text x="145" y="20" class="spacing">.</text>
+  <text x="155" y="20" class="email-part">com</text>
+</svg>
